@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TripIt</title>
+  <title>Destinations | TripIt</title>
 
   <!-- font awesome cdn link  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="destinations.css">
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
   
+  <script src="destinations.js" defer></script>
 </head>
 
 <body>
@@ -224,27 +231,18 @@
 				<p>PERU</p>
 			</div>
 		</div>
+ 
+    <!-- Map -->
+    <div class="map-container">
+      <h1>Choose your own destination!</h1>
+    <div id="map"></div>
 
-        <div class="map-container">
-            <h1>Choose your own destination!</h1>
-            <div id="map"></div>
-        </div>
+    
+    </div>
         
 	</section>
-
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
-
-    <script>
-        mapboxgl.accessToken='pk.eyJ1IjoiY29zbWluMjgwMiIsImEiOiJjbGJmMmVyMjEwMjJzM29wZHczN2JuZDQyIn0.TqZbu8NH54R_M37w02mVwA'
-        const map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v12',
-        center: [15.2551, 48.5620],
-        zoom: 4
-        });
-    </script>
-
+    
+<!-- Footer -->
 <footer>
     <div class="footer">
         <div class="col-1">
