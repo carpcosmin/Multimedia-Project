@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact Us | TripIt</title>
+    <title>Blog | TripIt</title>
 
-  <!-- font awesome cdn link  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="contact.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
 
  </head> 
 
  <body>
-    <body>
         <!-- Navigation bar -->
         <header>
           <nav class="navigation-bar">
@@ -21,8 +20,8 @@
                 <div class="menu">
                   <a href="index.html">Home</a>
                   <a href="destinations.html">Destinations</a>
-                  <a href="blog.html">Blog</a>
-                  <a href="contact.html" class="is-active">Contact</a>
+                  <a href="blog.html" class="is-active">Blog</a>
+                  <a href="contact.html">Contact</a>
                   <a href="#" class="dropbtn fas fa-user" onclick="navDropdownClick()"></a>
                     <div class="dropdown-content" id="navDropdown">
                       <a href="#" id="show-log-in-popup">Log In</a>
@@ -50,8 +49,8 @@
     <div class="mobile-nav-menu">
       <a href="index.html">Home</a>
       <a href="destinations.html">Destinations</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html" class="is-active">Contact</a>
+      <a href="blog.html" class="is-active">Blog</a>
+      <a href="contact.html">Contact</a>
       <a href="#" id="show-log-in-popup">Log In</a>
       <a href="#" id="show-sign-in-popup">Register</a>
       <a href="#" class="fas fa-search" id="search-btn"> Search</a>
@@ -163,92 +162,37 @@
     </div>
   </div>
 
-  <!-- Contact form -->
+  <!-- Post Section -->
+  <section class="add-post" id="add-post">
+    <div class="post-form">
+      <form>
+          <h2>Tell us about your experience!</h2>
+          <div class="inputBox">
+              <input type="text" name="" required="required">
+              <span>Name</span>
+          </div>
 
-  <section class="contact">
-    <div class="content">
-        <h2>Contact Us</h2>
-    </div>
+          <div class="inputBox">
+              <input type="text" name="" required="required">
+              <span>Destination</span>
+          </div>
 
-    <div class="container">
-        <div class="contact-info">
-             <div class="box">
-                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                <div class="text">
-                    <h1>Address</h1>
-                    <p>Bulevardul Iuliu Maniu 422, Bucuresti 6, 061127, Bucharest</p>
-                </div>
-             </div>
+          <div class="inputBox">
+              <textarea required="required"></textarea>
+              <span>Type your message...</span>
+          </div>
 
-             <div class="box">
-                <div class="icon"><i class="fas fa-phone-alt"></i></div>
-                <div class="text">
-                    <h1>Phone</h1>
-                    <p>+87(21)3500187</p>
-                </div>
-             </div>
+          <div class="addPicture">
+            <canvas id="canvas" width="600px" height="400px" style="border:1px solid gray"></canvas>
+            <br>
+            <label for="uploader">Select file: </label>
+            <input type="file" id="image"/> 
+          </div>
 
-             <div class="box">
-                <div class="icon"><i class="fas fa-envelope"></i></div>
-                <div class="text">
-                    <h1>Email</h1>
-                    <p>online@contact.tripit.com</p>
-                </div>
-             </div>
-
-             <div class="wrapper">
-              <h2>Follow us on social media: </h2>
-              <div class="button">
-                 <div class="icon">
-                    <i class="fab fa-facebook-f"></i>
-                 </div>
-                 <span>Facebook</span>
-              </div>
-              <div class="button">
-                 <div class="icon">
-                    <i class="fab fa-twitter"></i>
-                 </div>
-                 <span>Twitter</span>
-              </div>
-              <div class="button">
-                 <div class="icon">
-                    <i class="fab fa-instagram"></i>
-                 </div>
-                 <span>Instagram</span>
-              </div>
-              <div class="button">
-                 <div class="icon">
-                    <i class="fab fa-whatsapp"></i>
-                 </div>
-                 <span>Whatsapp</span>
-              </div>
-           </div>
-        </div>
-
-        <div class="contact-form">
-            <form>
-                <h2>Send message</h2>
-                <div class="inputBox">
-                    <input type="text" name="" required="required">
-                    <span>Full Name</span>
-                </div>
-
-                <div class="inputBox">
-                    <input type="text" name="" required="required">
-                    <span>Email</span>
-                </div>
-
-                <div class="inputBox">
-                    <textarea required="required"></textarea>
-                    <span>Type your message...</span>
-                </div>
-
-                <div class="inputBox">
-                    <input type="submit" name="" value="Send">
-                </div>
-            </form>
-
-        </div>
+          <div class="inputBox">
+              <input type="submit" name="" value="Send">
+          </div>
+      </form>
     </div>
   </section>
 
@@ -285,5 +229,6 @@
 </footer>
 
   <script src="script.js"></script>
+  <script src="blog.js"></script>
 
  </body>
