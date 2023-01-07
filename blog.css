@@ -76,23 +76,14 @@
     background-color: var(--blue);
 }
 
-@media (max-width: 990px){
-    .contact{
+@media (max-width: 500px){
+    .add-post .post-form{
         z-index: 99;
-        padding: 50px;
+        width: 150%;
     }
-    .container{
-        flex-direction: column;
-    }
-
-    .container .contact-info{
-        margin-bottom: 40px;
-    }
-    .container .contact-info{
-        width: 100%;
+    .addPicture #canvas{
+        width: 380px;
     }
 }
 
-.button{
-    color:red;
-}
+

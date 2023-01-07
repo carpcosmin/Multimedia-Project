@@ -86,4 +86,11 @@
     .map-container #map{
         width: 100%;
     }
+    .title{
+        text-align: center;
+    }
+
+    .map-container h1{
+        text-align: center;
+    }
 }

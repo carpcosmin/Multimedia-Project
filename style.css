@@ -786,5 +786,15 @@ form button{
     .footer{
         display: none;
     }
+    .controls{
+        display: none;
+    }
+    .content{
+        z-index: 98;
+        margin-top: 100px;
+    }
+    .image{
+        margin-left: 80px;
+    }
 }
 
